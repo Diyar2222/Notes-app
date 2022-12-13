@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.App {
+  min-height: 100vh;
+  width: 100vw;
+}
+.darkmode {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.container {
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.darkmode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+.notes-list {
+  display: grid;
+  gap:0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top:15px;
+  padding: 15px;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(251, 243, 13);
+  white-space:pre-wrap;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  text-indent: 15px;
+  background-color: #e5e4e2;
+  border-radius: 10px;
+}
+.search input {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 90%;
+  background-color: #e5e4e2;
+}
+.new {
+  background-color: aqua;
+}
+.new textarea{
+  background-color: aqua;
+  outline: none;
+  resize: none;
+  border: none;
+}
+.save, .toggler{
+  background-color: #e1e1e1;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  cursor:pointer;
+}
+.save:hover {
+  background-color: #ededed;
+}
+.delete-icon {
+  cursor: pointer;
+}
+.darkmode-container {
+  width:40px;
+  height:20px;
+  background-color: black;
+  border-radius: 10px;
+  border:1px solid black;
+  cursor: pointer;
+}
+.on {
+  background-color: white;
+  border: 1px solid white;;
+}
+.darkmode-circle {
+  width:20px;
+  height:18px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+.toggled{
+  float:right;
+  background-color: black;
+}
+.darkmode-toggler {
+  display: flex;
+  gap:10px;
+  font-weight: 600;
+}
+
